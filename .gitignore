@@ -1,0 +1,3 @@
+*.pyc
+pymatrix.egg-info/*
+.DS_Store
