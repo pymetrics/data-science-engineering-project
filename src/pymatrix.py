@@ -44,7 +44,7 @@ def echo(n, **kwargs):
               help='read matrix from a pickle file')
 @click.option('-s', '--sparse-coo', type=click.Path(exists=True),
               help='read matrix in COO format from a file')
-@click.option('--distance', default=False, type=click.BOOL,
+@click.option('--distance', default=False, type=click.BOOL, is_flag=True,
               help='print the distance between the pair of rows')
 def closest_to(row_i, **kwargs):
     """
@@ -67,7 +67,7 @@ def closest_to(row_i, **kwargs):
               help='read matrix from a pickle file')
 @click.option('-s', '--sparse-coo', type=click.Path(exists=True),
               help='read matrix in COO format from a file')
-@click.option('--distance', default=False, type=click.BOOL,
+@click.option('--distance', default=False, type=click.BOOL, is_flag=True,
               help='print the distance between the pair of rows')
 def closest(n, **kwargs):
     """
@@ -90,7 +90,7 @@ def closest(n, **kwargs):
               help='read matrix from a pickle file')
 @click.option('-s', '--sparse-coo', type=click.Path(exists=True),
               help='read matrix in COO format from a file')
-@click.option('--distance', default=False, type=click.BOOL,
+@click.option('--distance', default=False, type=click.BOOL, is_flag=True,
               help='print the distance between the pair of rows')
 def furthest(n, **kwargs):
     """
